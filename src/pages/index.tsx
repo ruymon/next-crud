@@ -4,10 +4,20 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Next CRUD</title> 
+        <title>Dashboard | Next CRUD</title> 
       </Head>
 
-      <h1 className="text-3xl font-bold underline">Hello World</h1>
+      <div className={`
+        flex
+        flex-col
+        justify-center
+        items-center
+        w-full
+        h-screen
+      `}>
+        <h1 className="text-gray-700 text-2xl">Next.js CRUD</h1>
+        <h2 className="text-gray-500 text-md font-light">Create, Remove, Update, Delete</h2>
+      </div>
     </>
   )
 }
