@@ -16,7 +16,8 @@ export default function Home() {
         h-screen
       `}>
         <h1 className="text-gray-700 text-2xl">Next.js CRUD</h1>
-        <h2 className="text-gray-500 text-md font-light">Create, Remove, Update, Delete</h2>
+        <h2 className="text-gray-500 text-md font-light">Create, Read, Update, Delete</h2>
+
       </div>
     </>
   )

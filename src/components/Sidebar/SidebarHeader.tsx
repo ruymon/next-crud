@@ -20,7 +20,9 @@ export function SidebarHeader() {
             after:rounded-3xl
         `}>
             <ImLab size={32} />
-            <span className="text-violet-700 font-mono mt-1">CRUD</span>
+            <span className=" font-mono mt-1 text-violet-700">
+                USR.<span className="font-semibold">BD</span>
+            </span>
         </div>
     )
 }

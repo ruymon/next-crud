@@ -30,7 +30,7 @@ export function Sidebar() {
             <div className={`fixed top-0 left-0 w-full h-10 bg-gradient-to-t from-white/0 to-white`}></div>
 
             <IconContext.Provider value={{ size: "20" }}>
-                <SidebarIcon href='#'>
+                <SidebarIcon href="#" title="Users" active>
                     <FiUsers />
                 </SidebarIcon>
 
@@ -38,41 +38,67 @@ export function Sidebar() {
                     <FiCalendar />
                 </SidebarIcon>
                 
-                <SidebarIcon href='#'>
+                <SidebarIcon href='#' disabled>
                     <FiDatabase />
                 </SidebarIcon>
 
-                <SidebarIcon href='#'>
+                <SidebarIcon href='#' disabled>
                     <FiActivity />
                 </SidebarIcon>
 
-                <SidebarIcon href='#'>
+                <SidebarIcon href='#' disabled>
                     <FiSettings />
                 </SidebarIcon>
 
-                <SidebarIcon href='#'>
+                <SidebarIcon href='#' disabled>
                     <FiShield />
                 </SidebarIcon>
 
-                <SidebarIcon href='#'>
+                <SidebarIcon href='#' disabled>
                     <FiRadio />
                 </SidebarIcon>
 
-                <SidebarIcon href='#'>
+                <SidebarIcon href='#' disabled>
                     <FiTrendingUp />
                 </SidebarIcon>
 
-                <SidebarIcon href='#'>
+                <SidebarIcon href='#' disabled>
                     <FiTerminal />
                 </SidebarIcon>
 
-                <SidebarIcon href='#'>
+                <SidebarIcon href='#' disabled>
                     <FiPackage />
                 </SidebarIcon>
 
-                <SidebarIcon href='#'>
+                <SidebarIcon href='#' disabled>
                     <FiActivity />
                 </SidebarIcon>
+
+                <SidebarIcon href='#' disabled>
+                    <FiActivity />
+                </SidebarIcon>
+
+                <SidebarIcon href='#' disabled>
+                    <FiActivity />
+                </SidebarIcon>
+
+                <SidebarIcon href='#' disabled>
+                    <FiActivity />
+                </SidebarIcon>
+
+                <SidebarIcon href='#' disabled>
+                    <FiActivity />
+                </SidebarIcon>
+
+                <SidebarIcon href='#' disabled>
+                    <FiActivity />
+                </SidebarIcon>
+
+                <SidebarIcon href='#' disabled>
+                    <FiActivity />
+                </SidebarIcon>
+
+
             </IconContext.Provider>
 
             <div className={`fixed bottom-0 left-0 w-full h-10 bg-gradient-to-t from-white to-white/0`}></div>
