@@ -16,7 +16,7 @@ export function StatusBadge({ status }: StatusProps) {
   };
 
   return (
-    <span className={`${statusStyles[status]} px-2 inline-flex text-xs leading-5 font-semibold rounded-full`}>
+    <span className={`${statusStyles[status]} px-3 py-1 inline-flex text-xs leading-5 font-semibold rounded`}>
       {statusDictionary[status]}
     </span>
   );

@@ -4,7 +4,7 @@ const leite = new Leite();
 import { firebaseIdGenerator } from './firebaseIdGenerator';
 
 interface User {
-  id: string,
+  firebaseId: string,
   avatar: string;
   name: string;
   email: string;
@@ -17,7 +17,7 @@ export const generateUsers = (amount: number): User[] => {
 
   for (let i = 0; i <= amount; i++) {
     users.push({
-      id: firebaseIdGenerator(),
+      firebaseId: firebaseIdGenerator(),
       avatar: `https://randomuser.me/api/portraits/men/${i}.jpg`,
       name: leite.pessoa.nome({ nomeDoMeioAbreviado: true }),
       email: leite.pessoa.email(),
