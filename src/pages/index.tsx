@@ -1,5 +1,7 @@
 import Head from "next/head";
+
 import { Layout } from "../components/Layout";
+import { UsersTable } from "../components/Users/UsersTable";
 
 export default function Home() {
   return (
@@ -12,17 +14,14 @@ export default function Home() {
         className={`
         flex
         flex-col
-        justify-center
         items-center
+        mt-2
         w-full
         h-screen
       `}
       >
         <Layout title='Gerenciamento de Usuários'>
-          <h1 className='text-gray-700 text-2xl'>Next.js CRUD</h1>
-          <h2 className='text-gray-500 text-md font-light'>
-            Create, Read, Update, Delete
-          </h2>
+          <UsersTable />
         </Layout>
       </div>
     </>
