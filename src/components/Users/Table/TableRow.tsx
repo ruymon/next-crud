@@ -22,7 +22,7 @@ export function TableRow({
   age,
   status,
 }: TableRowProps) {
-  const notify = () => toast.success('Firebase ID copied to clipboard.');
+  const notify = () => toast.success('Firebase ID copiado para a área de transferência!');
 
   return (
     <tr key={firebaseId}>

@@ -1,12 +1,13 @@
 import Head from "next/head";
 
 import { Layout } from "../components/Layout";
+import { UsersTable } from "../components/Users/UsersTable";
 
-export default function Home() {
+export default function Users() {
   return (
     <>
       <Head>
-        <title>Dashboard | Next CRUD</title>
+        <title>Users | Next CRUD</title>
       </Head>
 
       <div
@@ -20,8 +21,8 @@ export default function Home() {
         py-2
       `}
       >
-        <Layout title='Painel Principal'>
-          <h1>Olá, seja bem vindo ao USR.BD!</h1>
+        <Layout title='Gerenciamento de Usuários'>
+          <UsersTable />
         </Layout>
       </div>
     </>

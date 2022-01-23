@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { useState, useEffect } from 'react';
 
 import { generateUsers } from "../../utils/seeder";
 
@@ -6,7 +6,11 @@ import { TableHeader } from "./Table/TableHeader";
 import { TableRow } from "./Table/TableRow";
 
 export function UsersTable() {
-  const people = generateUsers(5);
+  const [people, setPeople] = useState([]);
+  
+  useEffect(() => {
+    setPeople(generateUsers(5));
+  }, []);
 
   return (
     <TableHeader>

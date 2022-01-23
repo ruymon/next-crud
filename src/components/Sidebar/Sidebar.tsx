@@ -46,11 +46,11 @@ export function Sidebar() {
       ></div>
 
       <IconContext.Provider value={{ size: "20" }}>
-        <SidebarIcon href='#' title='Dashboard'>
+        <SidebarIcon href='/' title='Dashboard'>
           <FiHome />
         </SidebarIcon>
 
-        <SidebarIcon href='#' title='Users' active>
+        <SidebarIcon href='/users' title='Users'>
           <FiUsers />
         </SidebarIcon>
 
