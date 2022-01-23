@@ -10,14 +10,18 @@ export function Layout(props: LayoutProps) {
         <div className={`
             flex
             flex-col
-            w-2/3
+            w-full
+            p-4
             bg-white
             text-gray-700
         `}>
             <Title>
-
+                {props.title}
             </Title>
 
+            <div className="mt-2">
+                {props.children}
+            </div>
         </div>
     );
-};
+}; 

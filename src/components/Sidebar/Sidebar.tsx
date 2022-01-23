@@ -34,7 +34,7 @@ export function Sidebar() {
                     <FiUsers />
                 </SidebarIcon>
 
-                <SidebarIcon href='#'>
+                <SidebarIcon href='#' disabled>
                     <FiCalendar />
                 </SidebarIcon>
                 

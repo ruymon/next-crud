@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import toast from "react-hot-toast";
 
 interface SidebarIconsProps {
   children: ReactNode;
@@ -9,6 +10,8 @@ interface SidebarIconsProps {
 }
 
 export function SidebarIcon(props: SidebarIconsProps) {
+  const notify = () => toast.error('Esse recurso ainda não está disponível.');
+  
   return (
     <a
       className={`
@@ -32,7 +35,8 @@ export function SidebarIcon(props: SidebarIconsProps) {
             : "hover:text-white hover:bg-violet-700"
         }
     `}
-      href={props.disabled ? "" : props.href}
+      onClick={props.disabled ? notify : undefined}
+      href={props.disabled ? undefined : props.href}
       title={props.title}
     >
       {props.children}
